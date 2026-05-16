@@ -7,5 +7,5 @@ import (
 var Version = "0.0.1"
 
 func main() {
-	fmt.Printf("Version: %s\n", Version)
+	fmt.Printf("New Version: %s\n", Version)
 }
