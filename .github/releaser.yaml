@@ -1,0 +1,10 @@
+adapter: go
+build:
+    command: go build -o dist/hello-releaser ./cmd/
+    artifacts: dist/hello-releaser
+version:
+    locations:
+        - path: cmd/main.go
+          regex: ^var Version = "(.*)"$
+release:
+    default_branch: main
